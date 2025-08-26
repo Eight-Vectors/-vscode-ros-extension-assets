@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS Extension Assets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        .gifs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .gif-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gif-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gif-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .gif-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gif-description {
+            color: #4a5568;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .github-link:hover {
+            background: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .gifs-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>🚀 ROS Extension Assets</h1>
+            <p class="subtitle">Visual demonstrations of ROS development tools and features</p>
+            <a href="https://github.com/thanzawwin/vscode-ros-extension-assets" class="github-link" target="_blank">
+                📁 View on GitHub
+            </a>
+        </div>
+        
+        <div class="gifs-grid">
+            <div class="gif-card">
+                <h3 class="gif-title">Connect ROSBridge</h3>
+                <div class="gif-container">
+                    <img src="gifs/connect-rosbridge.gif" alt="Connect ROSBridge demonstration">
+                </div>
+                <p class="gif-description">Demonstrates how to establish a connection to ROSBridge for ROS communication.</p>
+            </div>
+            
+            <div class="gif-card">
+                <h3 class="gif-title">Node Parameters</h3>
+                <div class="gif-container">
+                    <img src="gifs/node-parameters.gif" alt="Node parameters demonstration">
+                </div>
+                <p class="gif-description">Shows how to view and modify ROS node parameters through the extension interface.</p>
+            </div>
+            
+            <div class="gif-card">
+                <h3 class="gif-title">Topic Visualization</h3>
+                <div class="gif-container">
+                    <img src="gifs/topic-visualization.gif" alt="Topic visualization demonstration">
+                </div>
+                <p class="gif-description">Demonstrates real-time visualization of ROS topics and their data flow.</p>
+            </div>
+            
+            <div class="gif-card">
+                <h3 class="gif-title">Browse Entities</h3>
+                <div class="gif-container">
+                    <img src="gifs/browse-entities.gif" alt="Browse entities demonstration">
+                </div>
+                <p class="gif-description">Shows how to navigate and explore ROS entities like nodes, topics, and services.</p>
+            </div>
+            
+            <div class="gif-card">
+                <h3 class="gif-title">Message Service Inspector</h3>
+                <div class="gif-container">
+                    <img src="gifs/message-service-inspector.gif" alt="Message service inspector demonstration">
+                </div>
+                <p class="gif-description">Demonstrates inspection and debugging of ROS messages and services.</p>
+            </div>
+            
+            <div class="gif-card">
+                <h3 class="gif-title">Bag Recorder</h3>
+                <div class="gif-container">
+                    <img src="gifs/bag-recorder.gif" alt="Bag recorder demonstration">
+                </div>
+                <p class="gif-description">Shows how to record and manage ROS bag files for data logging and playback.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
